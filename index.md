@@ -1,4 +1,4 @@
-# FTMW Scientific Instrument Simulator
+# FTMW Scientific Simulator
 
 ## Table of contents
 
