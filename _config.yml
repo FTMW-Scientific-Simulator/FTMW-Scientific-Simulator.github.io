@@ -3,3 +3,5 @@ description: A simulator for a Fourier Transform Microwave Scientific.
 show_downloads: true
 google_analytics:
 theme: minima
+minima:
+  toc: false
