@@ -1,5 +1,3 @@
-# FTMW Scientific Simulator
-
 ## Table of contents
 
 * [Overview](#overview)
