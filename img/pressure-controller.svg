@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg width="600" height="300" version="1.1" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <linearGradient id="linearGradient29180">
+   <stop stop-color="#b3b3b3" offset=".053378"/>
+   <stop stop-color="#d2d2d2" offset=".25"/>
+   <stop stop-color="#9c9c9c" offset=".5"/>
+   <stop stop-color="#afafaf" offset=".75"/>
+   <stop stop-color="#d0d0d0" offset=".95"/>
+  </linearGradient>
+  <linearGradient id="linearGradient29166">
+   <stop stop-color="#b3b3b3" offset=".05"/>
+   <stop stop-color="#d2d2d2" offset=".25"/>
+   <stop stop-color="#9c9c9c" offset=".5"/>
+   <stop stop-color="#afafaf" offset=".75"/>
+   <stop stop-color="#d0d0d0" offset=".95"/>
+  </linearGradient>
+  <linearGradient id="linearGradient2" x1="21" x2="383" y1="121.75" y2="121.75" gradientUnits="userSpaceOnUse">
+   <stop stop-color="#b3b3b3" offset=".1"/>
+   <stop stop-color="#d2d2d2" offset=".25"/>
+   <stop stop-color="#9c9c9c" offset=".4"/>
+   <stop stop-color="#afafaf" offset=".6"/>
+   <stop stop-color="#d0d0d0" offset=".75"/>
+   <stop stop-color="#989898" offset=".95"/>
+  </linearGradient>
+  <linearGradient id="linearGradient11" x1="47.5" x2="67.5" y1="115.59" y2="115.59" gradientTransform="matrix(2.2472 0 0 2.2472 190.38 -29.624)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient29180"/>
+  <linearGradient id="linearGradient12" x1="45" x2="70" y1="125.56" y2="125.56" gradientTransform="matrix(2.2472 0 0 2.2472 190.38 -29.624)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient29166"/>
+  <linearGradient id="linearGradient13" x1="45" x2="70" y1="125.56" y2="125.56" gradientTransform="matrix(2.2472 0 0 2.2472 -39.124 -29.624)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient29166"/>
+  <linearGradient id="linearGradient14" x1="47.5" x2="67.5" y1="115.59" y2="115.59" gradientTransform="matrix(2.2472 0 0 2.2472 -39.124 -29.624)" gradientUnits="userSpaceOnUse" xlink:href="#linearGradient29180"/>
+ </defs>
+ <g transform="translate(85)">
+  <rect x="67.618" y="224.5" width="44.944" height="11.236" fill="url(#linearGradient14)"/>
+  <rect x="62" y="234.7" width="56.18" height="35.674" fill="url(#linearGradient13)"/>
+  <rect x="297.12" y="224.5" width="44.944" height="11.236" fill="url(#linearGradient11)"/>
+  <rect x="291.5" y="234.7" width="56.18" height="35.674" fill="url(#linearGradient12)"/>
+  <rect x="21" y="17" width="362" height="209.5" fill="url(#linearGradient2)" stroke-width="2.5096" style="paint-order:fill markers stroke"/>
+  <rect x="35.5" y="29" width="331.99" height="187.5" fill="#fbe631" stroke-width="2.2736" style="paint-order:fill markers stroke"/>
+  <rect x="58.765" y="59.765" width="283.89" height="115.12" ry="0" fill="#8e9b81" stroke="#000" stroke-width="4.5308"/>
+  <g fill="#fff" stroke="#000" stroke-width="1.1236">
+   <rect transform="rotate(180 155.48 5.6826)" x="178.56" y="-195.53" width="38.202" height="22.472" ry="10.868"/>
+   <rect transform="scale(-1)" x="-223.9" y="-206.9" width="38.202" height="22.472" ry="10.868"/>
+   <rect transform="rotate(180 245.98 5.6826)" x="178.56" y="-195.53" width="38.202" height="22.472" ry="10.868"/>
+  </g>
+  <text x="305.30771" y="53" fill="#fbe631" font-size="21.333px" stroke-width="2.5096" style="paint-order:fill markers stroke" xml:space="preserve"><tspan x="203.78847" y="53" fill="#1a1a1a" font-size="21.333px"  text-anchor="middle">Pressure Controller</tspan></text>
+ </g>
+</svg>
