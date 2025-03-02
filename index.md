@@ -1,5 +1,6 @@
-## Table of contents
+# Virtual FTMW Spectrometer
 
+## Table of Contents
 * [Overview](#overview)
 * [Front End](#front-end)
 * [Back End](#back-end)
@@ -27,11 +28,15 @@ All of these components were made using [Inkscape](https://inkscape.org/release/
 ### Instrument Window
 This window shows the components of the FTMW Spectrometer. The components are gets animated when the user clicked "Acquire Spectrum" button on the menu bar. It shows how the FTMW Spectrometer works.
 
+![instrument-window.png](img%2Finstrument-window.png)
+
 ### Schedule Window SVG Components
 All of these components were made using [Inkscape](https://inkscape.org/release/inkscape-1.4/). The schedule window can be found [here](https://github.com/FTMW-Scientific-Simulator/Virtual-FTMW-Spectrometer/tree/issue-15/src/assets/svg/components/schematic).
 
 ### Schedule Window
 This window shows the schematic of the FTMW Spectrometer. The schematic is a diagram that shows the electrical components of the FTMW Spectrometer.
+
+![schematic-window.png](img%2Fschematic-window.png)
 
 ## Back-End:
 

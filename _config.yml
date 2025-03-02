@@ -5,3 +5,7 @@ google_analytics:
 theme: minima
 minima:
   toc: false
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
