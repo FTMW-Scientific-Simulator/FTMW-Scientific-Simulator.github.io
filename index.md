@@ -4,6 +4,7 @@
 * [Overview](#overview)
 * [Front End](#front-end)
 * [Back End](#back-end)
+* [Project Updates](#project-management)
 * [Student Team](#student-team)
 
 ## Overview
@@ -44,21 +45,21 @@ This window shows the schematic of the FTMW Spectrometer. The schematic is a dia
 
 - **`acquire_spectra(params: dict, window=30, resolution=0.001, hwhm=0.007)`**  
   This function creates a simulated spectrum for a given molecule based on input parameters
-  1) **Parameter Extraction & File Retrieval:** It reads the molecule name and optional cropping limits from the `params` dictionary. Then it calls `get_datafile` (from the utils module) to obtain the correct data file.
-  2) **Data Loading:** The function reads spectral data from the file into a pandas DataFrame, converting the frequency and intensity columns into numeric types.
-  3) **Frequency Doubling & Cropping:** It doubles the frequency values and, if crop limits are provided, filters the data so only relevant spectral lines are kept.
-  4) **Local Spectrum:** For each spectral line, a local frequency grid is generated around the line (with a span defined by `window` and step size by `resolution`). Two Lorentzian profiles are computed (one at the line frequency and one at a slightly shifted “split” frequency) using the provided `lorentzian_profile` function. These two profiles are then summed to form the local spectrum.
-  5) **Global Spectrum:** It defines a common overall frequency grid (either based on the crop limits or the combined range of all local grids) and interpolates each local spectrum onto this grid. The contributions are then summed together.
-  6) **Noise Addition & Plotting:** If a noise level is specified in `params`, white noise is added to the final spectrum using `add_white_noise`. Finally, the spectrum is plotted
-  7) **Return:** A dictionary indicating success and containing the final frequency grid and spectrum data as lists.
+  - **Parameter Extraction & File Retrieval:** It reads the molecule name and optional cropping limits from the `params` dictionary. Then it calls `get_datafile` (from the utils module) to obtain the correct data file.
+  - **Data Loading:** The function reads spectral data from the file into a pandas DataFrame, converting the frequency and intensity columns into numeric types.
+  - **Frequency Doubling & Cropping:** It doubles the frequency values and, if crop limits are provided, filters the data so only relevant spectral lines are kept.
+  - **Local Spectrum:** For each spectral line, a local frequency grid is generated around the line (with a span defined by `window` and step size by `resolution`). Two Lorentzian profiles are computed (one at the line frequency and one at a slightly shifted “split” frequency) using the provided `lorentzian_profile` function. These two profiles are then summed to form the local spectrum.
+  - **Global Spectrum:** It defines a common overall frequency grid (either based on the crop limits or the combined range of all local grids) and interpolates each local spectrum onto this grid. The contributions are then summed together.
+  - **Noise Addition & Plotting:** If a noise level is specified in `params`, white noise is added to the final spectrum using `add_white_noise`. Finally, the spectrum is plotted
+  - **Return:** A dictionary indicating success and containing the final frequency grid and spectrum data as lists.
 
 `acquire_spectra_utils.py`
 
 - **`get_datafile(molecule: str, directory: str = "linelists") -> str`**  
-  This helper function maps a given molecule (using its chemical formula) to the corresponding data file name.
-  1) It uses a predefined dictionary that links molecule formulas to specific file names.
-  2) If the molecule is found, it returns the full file path by combining the directory and file name.
-  3) If the molecule isn’t mapped, it raises a `ValueError`.
+  This helper function maps a given molecule (using its chemical formula) to the corresponding data file name. 
+  - It uses a predefined dictionary that links molecule formulas to specific file names.
+  - If the molecule is found, it returns the full file path by combining the directory and file name.
+  - If the molecule isn’t mapped, it raises a `ValueError`.
 
 - **`lorentzian_profile(grid, center, hwhm)`**  
   This function calculates a Lorentzian profile over a given frequency grid.
@@ -71,6 +72,53 @@ This window shows the schematic of the FTMW Spectrometer. The schematic is a dia
 16,412 MHz to 16,416 MHz and a noise level of 0.02.
 - **Note**: The backend will not return a plotted graph, but it will return the frequency grid and the spectrum data as lists. These lists will be used to plot the graph in the front-end.
   ![C7H5N-spectra.png](img%2FC7H5N-spectra.png)
+
+## Project Management
+
+### Week 1
+- **Front-End**:
+  - Created the setup window to configure the spectrometer parameters.
+    - Used the Redux Toolkit to store the applied values into the redux store.
+  - Changed the menu items to be more accurate with the FTMW spectrometer.
+
+### Week 2
+- **Front-End**:
+  - Created the instrument window components using Inkscape.
+
+### Week 3
+- **Front-End**:
+  - Created the instrument window to show the components of the FTMW Spectrometer.
+  - Creaded the schematic components using Inkscape.
+
+### Week 4
+- **Front-End**:
+  - Polished schematic window componented.
+  - Started animation on the instrument window components.
+    - Moving the movable mirror and necessary components on the x-axis.
+    - Acquire Spectrum menu item starts the animation.
+    - Stop Acquisition menu item stops the animation.
+    - Cancel Acquisition menu item resets the animation.
+- **Back-End**:
+  - Slowly worked with sponsor to understand the backend code.
+  - Started off creating a Gaussian spectrum for a given line list file
+
+### Week 5
+- **Front-End**:
+  - Continued polishing the schematic window components based on sponsor feedback.
+  - Worked on the schematic window component.
+    - Created the schematic diagram shown on the window using inkscape.
+- **Back-End**:
+  - Created a function to broaden the spectral lines using Lorentzian profiles and splitting the spectral lines.
+    - The output of this function is what the final spectrum will look like.
+
+### Week 6
+- **Front-End**:
+    - Continued polishing the schematic window components based on sponsor feedback.
+- **Back-End**:
+  - Made the splititng and broadening of the spectral lines dynamic to use user params from the front end and returns x and y values for the spectrum.
+    - The output of this function is what the final spectrum will look like.
+    - Final spectrum will be plotted in the front end.
+  - Created a function to add white noise to the spectrum.
 
 ## Student Team
 
