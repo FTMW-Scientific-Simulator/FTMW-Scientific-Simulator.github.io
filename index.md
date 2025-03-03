@@ -73,7 +73,7 @@ This window shows the schematic of the FTMW Spectrometer. The schematic is a dia
 - **Note**: The backend will not return a plotted graph, but it will return the frequency grid and the spectrum data as lists. These lists will be used to plot the graph in the front-end.
   ![C7H5N-spectra.png](img%2FC7H5N-spectra.png)
 
-## Project Management
+## Project Updates
 
 ### Week 1
 - **Front-End**:
